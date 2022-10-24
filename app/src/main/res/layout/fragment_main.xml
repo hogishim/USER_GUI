@@ -1,0 +1,194 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/srch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn3"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:textColor="#E91E63" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textAlignment="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Welcome USERNAME"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           >
+
+            <Button
+                android:id="@+id/vsrc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mikebtn"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:textColor="#E91E63" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+   >
+
+
+
+    </LinearLayout>
+
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/toList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/list"
+                android:background="@drawable/btn2"
+                android:enabled="true"
+                android:onClick="onClick"
+
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:fontFamily="@font/naumun"
+                android:textSize="24dp"
+                android:text="음식 리스트"
+                android:textColor="#E91E63" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/toMyPg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/user"
+                android:background="@drawable/btn2"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:fontFamily="@font/naumun"
+                android:textSize="24dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="마이페이지"
+
+                android:textColor="#E91E63" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+         >
+
+            <Button
+                android:id="@+id/toUd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/prefer"
+                android:background="@drawable/btn2"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="선호도 수정"
+                android:fontFamily="@font/naumun"
+                android:textSize="24dp"
+                android:textColor="#E91E63" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+          >
+
+            <Button
+                android:id="@+id/toErl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/erl"
+                android:background="@drawable/btn2"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="레시피 등록"
+                android:fontFamily="@font/naumun"
+                android:textSize="24dp"
+                android:textColor="#E91E63" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
