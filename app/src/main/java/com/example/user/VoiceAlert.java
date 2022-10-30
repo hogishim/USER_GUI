@@ -9,10 +9,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 
 public class VoiceAlert extends Fragment {
     MainActivity mainActivity;
+
+
+    Button buttonNext;
+    Button buttonPrev;
+    ProgressBar bar;
+
     // 메인 액티비티 위에 올린다.
     @Override
     public void onAttach(Context context) {
@@ -40,6 +48,66 @@ public class VoiceAlert extends Fragment {
                 mainActivity.fragmentChange(7);
             }
 
+        });
+
+        buttonNext = rootView.findViewById(R.id.nex);
+
+        buttonNext.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                bar = rootView.findViewById(R.id.progressBar);
+
+                int nowValue = bar.getProgress();
+                int maxValue = bar.getMax();
+
+
+                if(maxValue == nowValue) {
+                    nowValue = 0;
+                } else {
+
+                    bar.setVisibility(View.VISIBLE);
+                    nowValue += 5;
+
+                }
+
+
+
+                bar.setProgress(nowValue);
+
+
+
+
+            }
+        });
+
+        buttonPrev = rootView.findViewById(R.id.baku);
+
+        buttonPrev.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                bar = rootView.findViewById(R.id.progressBar);
+
+                int nowValue = bar.getProgress();
+                int maxValue = bar.getMax();
+
+
+                if(maxValue == nowValue) {
+                    nowValue = 0;
+                } else {
+
+                    bar.setVisibility(View.VISIBLE);
+                    nowValue -= 5;
+
+                }
+
+
+
+                bar.setProgress(nowValue);
+
+
+
+
+            }
         });
 
         return rootView;
