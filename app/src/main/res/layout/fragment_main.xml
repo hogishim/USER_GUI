@@ -4,56 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.2"
-    android:orientation="horizontal">
-
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        >
-
-
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
     </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:gravity="center"
-            android:textAlignment="center"
-            >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Welcome USERNAME"
-                android:textSize="18dp" />
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-           >
-
-            <Button
-                android:id="@+id/vsrc"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/mikebtn"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:textColor="#E91E63" />
-        </LinearLayout>
-    </LinearLayout>
 
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
 
@@ -62,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="9"
         android:orientation="vertical"
-   >
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,19 +33,40 @@
 
 
 
-        <EditText
-            android:id="@+id/sample_EditText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/serachbar"
+            <EditText
+                android:id="@+id/sample_EditText"
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/serachbar"
+                android:hint="먹고싶은 음식을 검색"
+                />
 
-        />
+            <Button
+                android:id="@+id/src"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn3"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:textColor="#E91E63" />
+
+            <Button
+                android:id="@+id/vsrc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/mikebtn"
+                android:enabled="true"
+                android:onClick="onClick"
+                android:textColor="#E91E63" />
 
         </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="9"
+            android:layout_weight="15"
             >
         </LinearLayout>
 
@@ -142,7 +124,6 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="마이페이지"
-
                 android:textColor="#E91E63" />
 
         </LinearLayout>
@@ -160,7 +141,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-         >
+            >
 
             <Button
                 android:id="@+id/toUd"
@@ -184,7 +165,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-          >
+            >
 
             <Button
                 android:id="@+id/toErl"
