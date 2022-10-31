@@ -57,6 +57,12 @@
         >
 
 
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
 
 
     </LinearLayout>
@@ -131,6 +137,14 @@
         </LinearLayout>
 
 
+        <EditText
+            android:id="@+id/test_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
     </LinearLayout>
 
 

@@ -15,6 +15,10 @@ public class RecipeView extends Fragment {
 
 
     MainActivity mainActivity;
+    String result;
+    recipe_data[] recipeList;
+    int index;
+
     // 메인 액티비티 위에 올린다.
     @Override
     public void onAttach(Context context) {
@@ -47,10 +51,11 @@ public class RecipeView extends Fragment {
         });
 
         Button button2 = rootView.findViewById(R.id.strt);
-
+        // 음성인식 레시피 호출 버튼.
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mainActivity.frameLayout6.setData(recipeList[index]);
                 mainActivity.fragmentChange(6);
             }
 
@@ -59,5 +64,9 @@ public class RecipeView extends Fragment {
 
         return rootView;
 
+    }
+
+    public void send_result (String result){
+        this.result = result;
     }
 }
