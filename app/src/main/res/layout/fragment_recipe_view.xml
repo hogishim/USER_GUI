@@ -95,7 +95,7 @@
                     android:enabled="true"
                     android:text="음성인식 시작"
                     android:onClick="onClick"
-                    android:textColor="#E91E63" />
+                    android:textColor="#353535" />
 
 
             </LinearLayout>

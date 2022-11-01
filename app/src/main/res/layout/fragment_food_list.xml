@@ -7,25 +7,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
         android:orientation="horizontal">
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
-            <Button
-                android:id="@+id/src"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/btn3"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:textColor="#E91E63" />
 
-        </LinearLayout>
 
 
         <LinearLayout
@@ -72,9 +57,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        >
+
+
+
+        <EditText
+            android:id="@+id/sample_EditText"
+            android:layout_weight="30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/serachbar"
+            android:hint="먹고싶은 음식을 검색"
+            />
+
+        <Button
+            android:id="@+id/src"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn3"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:textColor="#E91E63" />
+
+        <Button
+            android:id="@+id/vsrc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/mikebtn"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:textColor="#E91E63" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="9"
         android:orientation="horizontal"
         android:gravity="right">
+
+
 
 
         <Button
