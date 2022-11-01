@@ -102,7 +102,7 @@
 
 
         <Button
-            android:id="@+id/toList"
+            android:id="@+id/toH"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/home"
@@ -123,7 +123,7 @@
 
 
         <Button
-            android:id="@+id/toMyPg"
+            android:id="@+id/toM"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/user"
@@ -141,7 +141,7 @@
 
 
         <Button
-            android:id="@+id/toUd"
+            android:id="@+id/toT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/prefer"
@@ -161,7 +161,7 @@
 
 
         <Button
-            android:id="@+id/toErl"
+            android:id="@+id/toE"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/erl"

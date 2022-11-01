@@ -57,7 +57,7 @@
 
 
         <Button
-            android:id="@+id/toList"
+            android:id="@+id/toL"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/list"
@@ -69,7 +69,7 @@
             android:paddingRight="15dp"
             android:fontFamily="@font/font3"
             android:textSize="15dp"
-            android:text="홈"
+            android:text="리스트"
             android:textColor="#141414"
 
             />
@@ -80,7 +80,7 @@
 
 
         <Button
-            android:id="@+id/toMyPg"
+            android:id="@+id/toM"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/user"
@@ -98,7 +98,7 @@
 
 
         <Button
-            android:id="@+id/toUd"
+            android:id="@+id/toH"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/home"
@@ -118,7 +118,7 @@
 
 
         <Button
-            android:id="@+id/toErl"
+            android:id="@+id/toR"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/erl"
