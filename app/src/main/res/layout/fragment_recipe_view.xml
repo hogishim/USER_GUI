@@ -174,7 +174,7 @@
             android:paddingRight="15dp"
             android:fontFamily="@font/font3"
             android:textSize="15dp"
-            android:text="홈"
+            android:text="리스트"
             android:textColor="#141414" />
 
 
@@ -225,7 +225,7 @@
             android:id="@+id/toErl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/erl"
+            android:drawableTop="@drawable/home"
             android:background="@drawable/btn2"
             android:enabled="true"
             android:onClick="onClick"

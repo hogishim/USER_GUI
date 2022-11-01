@@ -91,7 +91,7 @@
             android:id="@+id/toList"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/list"
+            android:drawableTop="@drawable/home"
             android:background="@drawable/btn2"
             android:enabled="true"
             android:onClick="onClick"

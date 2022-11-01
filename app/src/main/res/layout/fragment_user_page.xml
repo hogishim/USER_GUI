@@ -55,7 +55,7 @@
                 android:id="@+id/v"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn4"
+                android:background="@drawable/back"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
@@ -132,7 +132,7 @@
             android:id="@+id/toMyPg"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/user"
+            android:drawableTop="@drawable/home"
             android:background="@drawable/btn2"
             android:enabled="true"
             android:onClick="onClick"
