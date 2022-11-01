@@ -13,7 +13,6 @@ import android.widget.Button;
 
 public class Main extends Fragment {
 
-
     MainActivity mainActivity;
 
     // 메인 액티비티 위에 올린다.
@@ -70,6 +69,16 @@ public class Main extends Fragment {
             @Override
             public void onClick(View v) {
                 mainActivity.fragmentChange(4);
+            }
+
+        });
+
+        Button button5 = rootView.findViewById(R.id.vsrc);
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(6);
             }
 
         });
