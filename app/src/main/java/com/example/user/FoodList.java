@@ -45,6 +45,17 @@ public class FoodList extends Fragment {
 
         });
 
+        Button button2 = rootView.findViewById(R.id.move);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(7);
+            }
+
+        });
+
+
         return rootView;
 
 

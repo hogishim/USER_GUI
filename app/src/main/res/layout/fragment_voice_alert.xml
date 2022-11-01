@@ -38,7 +38,7 @@
                 android:id="@+id/bcbc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn4"
+                android:background="@drawable/back"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
@@ -54,14 +54,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center"
+
         >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/emo"/>
 
 
         <TextView
             android:id="@+id/test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginTop="15dp"
             android:text="TextView" />
 
 
@@ -93,9 +106,8 @@
                 android:id="@+id/baku"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn1"
+                android:background="@drawable/nxtb"
                 android:enabled="true"
-                android:text="이전"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
 
@@ -110,9 +122,8 @@
                 android:id="@+id/st"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn1"
+                android:background="@drawable/pbtn"
                 android:enabled="true"
-                android:text="시작"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
 
@@ -128,9 +139,9 @@
                 android:id="@+id/nex"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn1"
+                android:background="@drawable/bfrb"
                 android:enabled="true"
-                android:text="다음"
+
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
 
