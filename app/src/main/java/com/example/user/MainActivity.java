@@ -192,7 +192,8 @@ public class MainActivity extends AppCompatActivity {
                     case 106:
 
                         result = (String) msg.obj;
-                        activity.frameLayout6.send_result(result);
+                        Log.d("JSON", "handleMessage: " + result);
+                        //activity.frameLayout6.send_result(result);
                         break;
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
