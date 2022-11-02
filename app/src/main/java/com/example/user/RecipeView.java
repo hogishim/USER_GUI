@@ -36,7 +36,13 @@ public class RecipeView extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // 이 하단 블럭은 테스트위해 임시로 제작한 레시피 데이터셋 더미.
+        String[] tmp_recipe = {"1","2","3","4","5"};
+        String[] tmp_item = {"1","2","3"};
+        int tmp_maxRecipe = 5;
+        int tmp_maxItem = 3;
 
+        recipe_data tmp = new recipe_data(tmp_item,tmp_recipe,tmp_maxRecipe, tmp_maxItem);
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_recipe_view, container, false);
 
@@ -55,7 +61,7 @@ public class RecipeView extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainActivity.frameLayout6.setData(recipeList[index]);
+                mainActivity.frameLayout6.setData(tmp);
                 mainActivity.fragmentChange(6);
             }
 

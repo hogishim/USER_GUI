@@ -7,7 +7,7 @@ public class recipe_data {
     int maxPage;
     int maxItem;
 
-    public void recipe_data(String[] ingredient, String[] recipe, int maxPage, int maxItem){
+    public recipe_data(String[] ingredient, String[] recipe, int maxPage, int maxItem){
         this.ingredient = ingredient;
         this.recipe = recipe;
         this.maxPage = maxPage;
@@ -22,6 +22,14 @@ public class recipe_data {
         return result;
     }
 
+    public String getIngredient (int page){
+        String result = new String();
+
+        result = ingredient[page];
+
+        return result;
+    }
+
     public int getMaxPage (){
         return maxPage;
     }
@@ -30,4 +38,19 @@ public class recipe_data {
         return maxItem;
     }
 
+    public void setRecipe(String[] recipe) {
+        this.recipe = recipe;
+    }
+
+    public void setIngredient(String[] ingredient) {
+        this.ingredient = ingredient;
+    }
+
+    public void setMaxItem(int maxItem) {
+        this.maxItem = maxItem;
+    }
+
+    public void setMaxPage(int maxPage) {
+        this.maxPage = maxPage;
+    }
 }

@@ -38,7 +38,8 @@ public class Main extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainActivity.fragmentChange(2);
+                //mainActivity.fragmentChange(2); 잠시 RecipeView 기능 확인 위해 코멘트 아웃 처리.
+                mainActivity.fragmentChange(7);
             }
 
         });
