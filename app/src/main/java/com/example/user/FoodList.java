@@ -45,6 +45,57 @@ public class FoodList extends Fragment {
 
         });
 
+        Button button2 = rootView.findViewById(R.id.move);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(7);
+            }
+
+        });
+
+
+        Button button3 = rootView.findViewById(R.id.toH);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(1);
+            }
+
+        });
+
+        Button button4 = rootView.findViewById(R.id.toM);
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(4);
+            }
+
+        });
+
+        Button button5 = rootView.findViewById(R.id.toT);
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(3);
+            }
+
+        });
+
+        Button button6 = rootView.findViewById(R.id.toE);
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.fragmentChange(5);
+            }
+
+        });
+
         return rootView;
 
 

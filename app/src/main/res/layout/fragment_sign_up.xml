@@ -7,8 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/yellow">
+        android:orientation="vertical">
 
 
 
@@ -65,10 +64,11 @@
 
 
             <EditText
-
+                android:background="@drawable/inputbox"
                 android:id="@+id/id1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColorHint="#032149"
                 android:ems="15"
                 android:inputType="text"
                 android:text="ID를 입력하세요"
@@ -81,6 +81,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
+                android:background="@drawable/btn5"
                 android:text="중복확인"
                 android:layout_gravity="center"/>
 
@@ -91,6 +92,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical"
             android:layout_marginTop="14dp">
 
@@ -99,17 +101,23 @@
         <EditText
             android:id="@+id/pw1"
             android:layout_width="wrap_content"
+            android:background="@drawable/inputbox"
             android:layout_height="wrap_content"
-            android:ems="17"
+            android:ems="15"
             android:inputType="text"
+            android:textColorHint="#032149"
             android:text="비밀번호 입력"
             android:layout_gravity="center"/>
 
         <EditText
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="#032149"
             android:id="@+id/pw2"
-            android:layout_width="wrap_content"
+            android:layout_width="wrap_content"                android:background="@drawable/inputbox"
+
             android:layout_height="wrap_content"
-            android:ems="17"
+            android:ems="15"
             android:inputType="text"
             android:text="비밀번호 재확인"
             android:layout_gravity="center"/>
@@ -236,7 +244,8 @@
             android:ems="15"
             android:inputType="text"
             android:text="가입 완료"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:background="@drawable/btn5"/>
 
     </LinearLayout>
     </ScrollView>

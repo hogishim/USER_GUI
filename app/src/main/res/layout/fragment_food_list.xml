@@ -7,25 +7,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
         android:orientation="horizontal">
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
-            <Button
-                android:id="@+id/src"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/btn3"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:textColor="#E91E63" />
 
-        </LinearLayout>
 
 
         <LinearLayout
@@ -57,7 +42,7 @@
                 android:id="@+id/tob"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn4"
+                android:background="@drawable/back"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
@@ -72,8 +57,62 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        >
+
+
+
+        <EditText
+            android:id="@+id/sample_EditText"
+            android:layout_weight="30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/serachbar"
+            android:hint="먹고싶은 음식을 검색"
+            />
+
+        <Button
+            android:id="@+id/src"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn3"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:textColor="#E91E63" />
+
+        <Button
+            android:id="@+id/vsrc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/mikebtn"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:textColor="#E91E63" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="9"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+
+
+        <Button
+            android:id="@+id/move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:fontFamily="@font/font3"
+            android:text="레시피 보기"
+            android:textColor="#141414" />
+
 
 
     </LinearLayout>
@@ -88,10 +127,10 @@
 
 
         <Button
-            android:id="@+id/toList"
+            android:id="@+id/toH"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/list"
+            android:drawableTop="@drawable/home"
             android:background="@drawable/btn2"
             android:enabled="true"
             android:onClick="onClick"
@@ -109,7 +148,7 @@
 
 
         <Button
-            android:id="@+id/toMyPg"
+            android:id="@+id/toM"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/user"
@@ -127,7 +166,7 @@
 
 
         <Button
-            android:id="@+id/toUd"
+            android:id="@+id/toT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/prefer"
@@ -147,7 +186,7 @@
 
 
         <Button
-            android:id="@+id/toErl"
+            android:id="@+id/toE"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/erl"

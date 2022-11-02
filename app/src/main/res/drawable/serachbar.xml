@@ -20,9 +20,9 @@
             <stroke
                 android:width="2dp"
                 android:color="#FFFFFF" />
-            <corners android:radius="6dp"/>
+            <corners android:radius="15dp"/>
             <solid
-                android:color="#FFFFFF" />
+                android:color="#ECECEC" />
         </shape>
 
     </item>

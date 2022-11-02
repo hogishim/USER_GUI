@@ -7,7 +7,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -32,13 +31,13 @@
             android:layout_weight="4"
             >
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Enroll Recipe"
+                android:text="레시피 등록"
                 android:textAlignment="center"
-                android:textSize="30dp"
-                android:fontFamily="@font/font"
+                android:textSize="25dp"
+                android:fontFamily="@font/font3"
                 android:textColor="#000002"/>
         </LinearLayout>
 
@@ -50,7 +49,7 @@
                 android:id="@+id/bb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn4"
+                android:background="@drawable/back"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
@@ -62,7 +61,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,6 +73,17 @@
             android:textColor="#000002"/>
 
 
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/btn6"
+            android:text="파일 업로드" />
+
     </LinearLayout>
 
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
@@ -80,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,13 +103,26 @@
             android:textColor="#000002"/>
 
 
+        <EditText
+            android:background="@drawable/inputbox"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#032149"
+            android:inputType="text"
+            android:layout_gravity="center" />
+
+
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -106,6 +131,19 @@
             android:textSize="20dp"
             android:fontFamily="@font/font"
             android:textColor="#000002"/>
+
+
+        <EditText
+            android:background="@drawable/inputbox"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/id2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#032149"
+            android:inputType="text"
+            android:layout_gravity="center" />
 
 
     </LinearLayout>
@@ -130,8 +168,8 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:text="홈"
+            android:textSize="10dp"
+            android:text="리스트"
             android:textColor="#141414"
 
             />
@@ -150,7 +188,7 @@
             android:enabled="true"
             android:onClick="onClick"
             android:fontFamily="@font/font3"
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="마이페이지"
@@ -163,7 +201,7 @@
             android:id="@+id/toUd"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/prefer"
+            android:drawableTop="@drawable/home"
             android:background="@drawable/btn2"
             android:enabled="true"
             android:onClick="onClick"
@@ -171,7 +209,7 @@
             android:paddingRight="15dp"
             android:text="홈"
             android:fontFamily="@font/font3"
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:layout_weight="1"
             android:textColor="#141414" />
 
@@ -191,7 +229,7 @@
             android:paddingRight="15dp"
             android:text="레시피등록"
             android:fontFamily="@font/font3"
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:layout_weight="1"
             android:textColor="#141414" />
 

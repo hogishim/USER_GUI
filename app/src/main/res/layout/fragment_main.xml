@@ -7,35 +7,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4"
-        android:orientation="vertical">
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:background="@color/yellow">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/font3"
+            android:text="USER"
+            android:textColor="#111111"
+            android:textSize="30dp" />
+
+
+
     </LinearLayout>
 
 
-
-
-
-
-    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="9"
         android:orientation="vertical"
+
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+
             >
 
 
 
             <EditText
                 android:id="@+id/sample_EditText"
-                android:layout_weight="10"
+                android:layout_weight="30"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/serachbar"
@@ -45,7 +55,6 @@
             <Button
                 android:id="@+id/src"
                 android:layout_width="wrap_content"
-                android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:background="@drawable/btn3"
                 android:enabled="true"
@@ -63,11 +72,17 @@
 
         </LinearLayout>
         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="15"
             >
+
+
+
         </LinearLayout>
 
     </LinearLayout>
@@ -78,111 +93,77 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.5"
         android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
 
             <Button
                 android:id="@+id/toList"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/list"
+                android:drawableTop="@drawable/list"
                 android:background="@drawable/btn2"
                 android:enabled="true"
                 android:onClick="onClick"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:fontFamily="@font/naumun"
-                android:textSize="24dp"
+                android:fontFamily="@font/font3"
+                android:textSize="15dp"
                 android:text="음식 리스트"
-                android:textColor="#E91E63" />
+                android:textColor="#03A9F4"
+                android:layout_weight="1"/>
 
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
 
             <Button
                 android:id="@+id/toMyPg"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/user"
+                android:drawableTop="@drawable/user"
                 android:background="@drawable/btn2"
                 android:enabled="true"
                 android:onClick="onClick"
-                android:fontFamily="@font/naumun"
-                android:textSize="24dp"
+                android:fontFamily="@font/font3"
+                android:textSize="15dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="마이페이지"
-                android:textColor="#E91E63" />
+                android:textColor="#03A9F4"
+                android:layout_weight="1"/>
 
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.5"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
 
             <Button
                 android:id="@+id/toUd"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/prefer"
+                android:drawableTop="@drawable/prefer"
                 android:background="@drawable/btn2"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="선호도 수정"
-                android:fontFamily="@font/naumun"
-                android:textSize="24dp"
-                android:textColor="#E91E63" />
+                android:fontFamily="@font/font3"
+                android:textSize="15dp"
+                android:textColor="#03A9F4"
+                android:layout_weight="1"/>
 
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
 
             <Button
                 android:id="@+id/toErl"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:drawableLeft="@drawable/erl"
+                android:drawableTop="@drawable/erl"
                 android:background="@drawable/btn2"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="레시피 등록"
-                android:fontFamily="@font/naumun"
-                android:textSize="24dp"
-                android:textColor="#E91E63" />
+                android:fontFamily="@font/font3"
+                android:textSize="15dp"
+                android:textColor="#03A9F4"
+                android:layout_weight="1"/>
 
-        </LinearLayout>
+
 
 
     </LinearLayout>
