@@ -56,7 +56,7 @@ public class RecipeView extends Fragment {
             @Override
             public void onClick(View v) {
 
-                mainActivity.fragmentChange(6);
+                mainActivity.frameLayout6.setData(tmp);
             }
 
         });
