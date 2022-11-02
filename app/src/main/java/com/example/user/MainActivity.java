@@ -10,8 +10,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.os.IResultReceiver;
 import android.util.Log;
 import android.widget.TextView;
+
+import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
@@ -193,6 +196,18 @@ public class MainActivity extends AppCompatActivity {
 
                         result = (String) msg.obj;
                         Log.d("JSON", "handleMessage: " + result);
+
+                        try{
+                            JSONObject json = new JSONObject(result);
+                            String intent = json.getString("intent");
+                            int control = Integer.parseInt(intent);
+                            Log.d("intent","result : "+ control);
+                            activity.frameLayout6.Chat_result(control);
+
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+
                         //activity.frameLayout6.send_result(result);
                         break;
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
