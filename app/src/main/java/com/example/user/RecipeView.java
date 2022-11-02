@@ -57,6 +57,7 @@ public class RecipeView extends Fragment {
             public void onClick(View v) {
 
                 mainActivity.frameLayout6.setData(tmp);
+                mainActivity.fragmentChange(6);
             }
 
         });
