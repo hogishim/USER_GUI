@@ -39,7 +39,7 @@ public class VoiceAlert extends Fragment {
     Button buttonNext;
     Button buttonPrev;
     Button buttonStart;
-    TextView tmpTextView; // GUI 상에 추가될 스트링 출력 부분 (현재는 기능구현을 위한 임시 텍스트 뷰 )
+    TextView test; // GUI 상에 추가될 스트링 출력 부분 (현재는 기능구현을 위한 임시 텍스트 뷰 )
     ProgressBar bar;
     String result = null;
     // 메인 액티비티 위에 올린다.
@@ -128,14 +128,15 @@ public class VoiceAlert extends Fragment {
         @Override
         public void onResults(Bundle bundle) {
             ArrayList<String> matches = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);	//인식 결과를 담은 ArrayList
-            user_chat = null;
+            user_chat = "";
 
             //인식 결과
             String newText="";
             for (int i = 0; i < matches.size() ; i++) {
                 user_chat += matches.get(i);
             }
-            request_Chat(user_chat,"http://172.30.1.52:8080/chat_request");
+            // Chat_API 주소지 박아줄것.
+            request_Chat(user_chat,"http://10.0.2.2:8080/chat_request");
 
         }
 
@@ -171,7 +172,8 @@ public class VoiceAlert extends Fragment {
         CheckPermission();
 
         bar = rootView.findViewById(R.id.progressBar);
-        //tmpTextView.setText(recipeNowString);
+        test = rootView.findViewById(R.id.test);
+        test.setText(recipeNowString);
 
         barCurrentValue = bar.getProgress();
         barMaxValue = bar.getMax();
@@ -270,6 +272,8 @@ public class VoiceAlert extends Fragment {
                     Toast.makeText(mainActivity.getApplicationContext(),"마지막 페이지 입니다.",Toast.LENGTH_SHORT).show();
                     current_index = maxIndex;
                 }
+
+                ResetText();
             }else{
                 barCurrentValue -= (barMaxValue / maxIndex);
                 current_index -= 1;
@@ -277,6 +281,8 @@ public class VoiceAlert extends Fragment {
                     Toast.makeText(mainActivity.getApplicationContext(),"첫 페이지 입니다.",Toast.LENGTH_SHORT).show();
                     current_index = 0;
                 }
+
+                ResetText();
             }
         }
         bar.setProgress(barCurrentValue);
@@ -284,7 +290,7 @@ public class VoiceAlert extends Fragment {
 
     public void ResetText(){
         recipeNowString = data.getRecipeData(current_index);
-        //tmpTextView.setText(recipeNowString);
+        test.setText(recipeNowString);
     }
 
     public void CheckPermission() {
@@ -316,12 +322,14 @@ public class VoiceAlert extends Fragment {
         */
         if (control == 0) {
             //this.setTimer();
+            Toast.makeText(mainActivity.getApplicationContext(), "타이머 설정", Toast.LENGTH_SHORT).show();
         } else if(control == 1){
             this.control(true);
         } else if(control == 2){
             this.control(false);
         } else if(control == 3){
             //this.repeat();
+            Toast.makeText(mainActivity.getApplicationContext(), "다시듣기 실행", Toast.LENGTH_SHORT).show();
         }
     }
 
