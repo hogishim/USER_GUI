@@ -37,8 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Delicous ramen"
-                android:textSize="30dp"
+                android:text="음식: "
+                android:textSize="25dp"
                 android:fontFamily="@font/font"
                 android:textColor="#000002"/>
         </LinearLayout>
@@ -123,6 +123,8 @@
 
     </LinearLayout>
 
+
+
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -161,81 +163,67 @@
 
 
 
-        <Button
+        <ImageButton
             android:id="@+id/toList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/list"
-            android:background="@drawable/btn2"
+            android:layout_height="match_parent"
+            android:src="@drawable/list"
             android:enabled="true"
             android:onClick="onClick"
-            android:layout_weight="1"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:text="리스트"
-            android:textColor="#141414" />
-
-
-
-
-
-
-        <Button
-            android:id="@+id/toMyPg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/user"
             android:background="@drawable/btn2"
-            android:enabled="true"
-            android:onClick="onClick"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="마이페이지"
             android:layout_weight="1"
-            android:textColor="#141414" />
-
-
-
-        <Button
-            android:id="@+id/toUd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/prefer"
-            android:background="@drawable/btn2"
-            android:enabled="true"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="선호도 수정"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:layout_weight="1"
-            android:textColor="#141414"
+            android:padding="5dp"
             />
 
 
 
 
 
-        <Button
-            android:id="@+id/toErl"
+
+        <ImageButton
+            android:id="@+id/toM"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/home"
+            android:layout_height="match_parent"
+            android:src="@drawable/user"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="홈으로"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
             android:layout_weight="1"
-            android:textColor="#141414" />
+            android:padding="5dp"/>
+
+        <ImageButton
+            android:id="@+id/toH"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+
+
+        <ImageButton
+            android:id="@+id/toT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/prefer"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/toE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/erl"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:padding="5dp"/>
 
 
 

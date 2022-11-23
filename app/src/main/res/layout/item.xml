@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        apps:layout_constraintStart_toEndOf="@+id/iv"
+        apps:layout_constraintTop_toTopOf="@+id/iv"
+        apps:layout_constraintBottom_toBottomOf="@+id/iv"
+        android:text="텍스트" />
+</LinearLayout>

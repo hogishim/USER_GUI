@@ -100,24 +100,15 @@
         android:gravity="right">
 
 
-
-
-        <Button
-            android:id="@+id/move"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn2"
-            android:enabled="true"
-            android:onClick="onClick"
-            android:fontFamily="@font/font3"
-            android:text="레시피 보기"
-            android:textColor="#141414" />
-
-
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
-    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -125,81 +116,67 @@
         android:orientation="horizontal">
 
 
-
-        <Button
-            android:id="@+id/toH"
+        <ImageButton
+            android:id="@+id/toList"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/home"
-            android:background="@drawable/btn2"
+            android:src="@drawable/list"
             android:enabled="true"
             android:onClick="onClick"
+            android:background="@color/white"
             android:layout_weight="1"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:text="홈"
-            android:textColor="#141414" />
+            android:padding="5dp"
+            />
 
 
 
 
 
 
-        <Button
+        <ImageButton
             android:id="@+id/toM"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/user"
+            android:src="@drawable/user"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="마이페이지"
             android:layout_weight="1"
-            android:textColor="#141414" />
+            android:padding="5dp"/>
+
+        <ImageButton
+            android:id="@+id/toH"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:padding="5dp"/>
 
 
-
-        <Button
+        <ImageButton
             android:id="@+id/toT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/prefer"
+            android:src="@drawable/prefer"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
             android:layout_weight="1"
-            android:text="선호도 수정"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:textColor="#141414" />
+            android:padding="5dp"/>
 
 
 
 
 
-        <Button
+        <ImageButton
             android:id="@+id/toE"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/erl"
+            android:src="@drawable/erl"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
             android:layout_weight="1"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="레시피 등록"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:textColor="#141414" />
+            android:padding="5dp"/>
 
 
 

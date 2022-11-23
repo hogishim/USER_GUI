@@ -2,14 +2,14 @@
     <string name="app_name">USER</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name = "sweet">단 음식</string>
-    <string name = "hot">매운 음식</string>
-    <string name = "salt">짠 음식</string>
-    <string name = "light">담백한 음식</string>
-    <string name = "healhty">건강한 음식</string>
+    <string name="sweet">단 음식</string>
+    <string name="hot">매운 음식</string>
+    <string name="salt">짠 음식</string>
+    <string name="light">담백한 음식</string>
+    <string name="healhty">건강한 음식</string>
 
-    <string name = "chicken">닭고기</string>
-    <string name = "beef">소고기</string>
-    <string name = "pork">돼지고기</string>
-    <string name = "lamb">양고기</string>
+    <string name="chicken">닭고기</string>
+    <string name="beef">소고기</string>
+    <string name="pork">돼지고기</string>
+    <string name="lamb">양고기</string>
 </resources>
