@@ -5,6 +5,24 @@
     android:orientation="vertical" >
 
 
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,10 +70,10 @@
 
         </LinearLayout>
 
-        </LinearLayout>
+    </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
-     <LinearLayout
-         android:layout_marginTop="30dp"
+    <LinearLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -82,36 +100,67 @@
 
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-                android:text="ID"
-                android:textSize="15dp"
-                android:textColor="#000000"
-                android:fontFamily="@font/font"/>
-
-
-            <EditText
-                android:background="@drawable/inputbox"
-                android:id="@+id/id1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColorHint="#032149"
-                android:ems="15"
-                android:inputType="text"
-                android:text="ID를 입력하세요"
-                android:layout_gravity="center" />
+                    android:text="ID"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/font"/>
 
 
-            <Button
-                android:id="@+id/check"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:layout_gravity="left"
-                android:background="@drawable/btn1"
-                android:text="중복확인" />
+                <EditText
+                    android:background="@drawable/inputbox"
+                    android:id="@+id/id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#032149"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:text="ID를 입력하세요"
+                    android:layout_gravity="center" />
+
+
+                <Button
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_gravity="left"
+                    android:background="@drawable/btn1"
+                    android:text="중복확인" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="닉네임"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/font"/>
+
+
+                <EditText
+                    android:background="@drawable/inputbox"
+                    android:id="@+id/id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#032149"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:text="닉네임을 입력하세요"
+                    android:layout_gravity="center" />
+
+
+                <Button
+                    android:id="@+id/checkN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_gravity="left"
+                    android:background="@drawable/btn1"
+                    android:text="중복확인" />
 
             </LinearLayout>
 
@@ -161,17 +210,17 @@
                     android:fontFamily="@font/font"/>
 
 
-        <EditText
-            android:layout_marginTop="8dp"
-            android:id="@+id/pw1"
-            android:layout_width="wrap_content"
-            android:background="@drawable/inputbox"
-            android:layout_height="wrap_content"
-            android:ems="15"
-            android:inputType="text"
-            android:textColorHint="#032149"
-            android:text="비밀번호 입력"
-            android:layout_gravity="center"/>
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/pw1"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/inputbox"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:textColorHint="#032149"
+                    android:text="비밀번호 입력"
+                    android:layout_gravity="center"/>
 
 
                 <TextView
@@ -183,18 +232,18 @@
                     android:textColor="#000000"
                     android:fontFamily="@font/font"/>
 
-        <EditText
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="15dp"
-            android:textColorHint="#032149"
-            android:id="@+id/pw2"
-            android:layout_width="wrap_content"
-            android:background="@drawable/inputbox"
-            android:layout_height="wrap_content"
-            android:ems="15"
-            android:inputType="text"
-            android:text="비밀번호 재확인"
-            android:layout_gravity="center"/>
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColorHint="#032149"
+                    android:id="@+id/pw2"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/inputbox"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:text="비밀번호 재확인"
+                    android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -239,66 +288,71 @@
 
         </LinearLayout>
 
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:gravity="center"
-             android:orientation="vertical"
-             android:layout_marginTop="14dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="14dp">
 
 
 
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:orientation="horizontal"
-                 android:layout_marginTop="10dp"
-                 android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
 
-             </LinearLayout>
+            </LinearLayout>
 
-             <LinearLayout
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginTop="15dp"
-                 android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
 
-                 <Button
-                     android:id="@+id/mov"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:inputType="text"
-                     android:layout_gravity="left"
-                     android:background="@drawable/btn1"
-                     android:text="더 나은 추천을 위해 선호도를 입력해 주세요!!"
-                     android:textColor="#567ACE"/>
-
-
-                 <Button
-                     android:id="@+id/fin"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:ems="10"
-                     android:inputType="text"
-                     android:layout_gravity="center"
-                     android:background="@drawable/btn5"
-                     android:layout_marginTop="10dp"
-                     android:text="가입 하기" />
+                <Button
+                    android:id="@+id/mov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_gravity="left"
+                    android:background="@drawable/btn1"
+                    android:text="더 나은 추천을 위해 선호도를 입력해 주세요!!"
+                    android:textColor="#567ACE"/>
 
 
-             </LinearLayout>
+                <Button
+                    android:id="@+id/fin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn5"
+                    android:layout_marginTop="10dp"
+                    android:text="가입 하기" />
 
 
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:orientation="horizontal"
-                 android:layout_marginTop="15dp"
-                 android:layout_weight="1">
+            </LinearLayout>
 
-             </LinearLayout>
 
-         </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>

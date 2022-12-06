@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:background="#BBB0DC"
         android:orientation="horizontal">
 
 
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="음식 : "
+                android:text="무엇을 도와드릴까요??"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -72,9 +72,18 @@
 
         <TextView
             android:id="@+id/test"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tmpTextView"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
             android:text="TextView" />
 
 

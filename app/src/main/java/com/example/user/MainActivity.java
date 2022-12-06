@@ -131,9 +131,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void sendHttpApi(String data, String uri, int control){
+    public void sendHttpApi(String data, String uri, int control,int ID){
 
-        http_protocol http = new http_protocol(data,uri,handle,control);
+        http_protocol http = new http_protocol(data,uri,this.handle,control,ID);
 
         http.start();
     }
@@ -155,44 +155,76 @@ public class MainActivity extends AppCompatActivity {
 
 
             if (activity != null) {
-                switch (msg.what) {
+                if(msg.what == 101) {
                     // http 클래스에서 JSON 데이터를 넘겨받은 경우.
-                    case 101:
 
-                        result = (String) msg.obj;
-                        //activity.frameLayout1.send_result(result);
-                        break;
+                    result = (String) msg.obj;
+                    activity.frameLayout1.send_recommand_result(result);
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+                }else if(msg.what == 1010) {
+
+                    result = (String) msg.obj;
+                    activity.frameLayout1.send_result(result, 0);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 102:
+                }else if(msg.what == 1011) {
 
-                        result = (String) msg.obj;
-                        //activity.frameLayout2.send_result(result);
-                        break;
+                    result = (String) msg.obj;
+                    activity.frameLayout1.send_result(result, 1);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 103:
+                }else if(msg.what == 1012) {
 
-                        result = (String) msg.obj;
-                        //activity.frameLayout3.send_result(result);
-                        break;
+                    result = (String) msg.obj;
+                    activity.frameLayout1.send_result(result, 2);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 104:
+                }else if(msg.what == 1013) {
+
+                    result = (String) msg.obj;
+                    activity.frameLayout1.send_result(result, 3);
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+
+                }else if(msg.what == 102) {
+
+                    result = (String) msg.obj;
+                    activity.frameLayout2.send_result(result, 0);
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+
+                }else if(msg.what == 1021) {
+
+                    result = (String) msg.obj;
+                    Log.d("con1",result);
+                    activity.frameLayout2.send_result(result, 1);
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+
+                }else if(msg.what == 1022) {
+
+                    result = (String) msg.obj;
+                    Log.d("con2",result);
+                    activity.frameLayout2.send_result(result, 2);
+
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+                }else if(msg.what == 103) {
+
+                    result = (String) msg.obj;
+                    //activity.frameLayout3.send_result(result);
+                    // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
+
+                }else if(msg.what == 104){
 
                         result = (String) msg.obj;
                         //activity.frameLayout4.send_result(result);
-                        break;
+
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 105:
+                }else if(msg.what == 105){
 
                         result = (String) msg.obj;
-                        //activity.frameLayout5.send_result(result);
-                        break;
+                        activity.frameLayout5.send_result(result);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 106:
+                }else if(msg.what == 106){
 
                         result = (String) msg.obj;
                         Log.d("JSON", "handleMessage: " + result);
@@ -209,23 +241,21 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         //activity.frameLayout6.send_result(result);
-                        break;
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 107:
+                }else if(msg.what == 107){
 
                         result = (String) msg.obj;
                         activity.frameLayout7.send_result(result);
-                        break;
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                    case 404:
+                }else if(msg.what == 404){
 
                         result = "Error!";
                         activity.frameLayout6.send_result(result);
-                        break;
 
                 }
+
             }
         }
 

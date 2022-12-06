@@ -11,6 +11,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,16 +21,18 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.security.Permission;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import static android.speech.tts.TextToSpeech.ERROR;
 
 
 public class VoiceAlert extends Fragment {
     MainActivity mainActivity;
+    private TextToSpeech tts;
 
     Intent intent;
     SpeechRecognizer speechRecognizer;
@@ -39,7 +43,8 @@ public class VoiceAlert extends Fragment {
     Button buttonNext;
     Button buttonPrev;
     Button buttonStart;
-    TextView test; // GUI 상에 추가될 스트링 출력 부분 (현재는 기능구현을 위한 임시 텍스트 뷰 )
+    TextView recipeText;
+    TextView pageText;
     ProgressBar bar;
     String result = null;
     // 메인 액티비티 위에 올린다.
@@ -136,7 +141,7 @@ public class VoiceAlert extends Fragment {
                 user_chat += matches.get(i);
             }
             // Chat_API 주소지 박아줄것.
-            request_Chat(user_chat,"http://10.0.2.2:8080/chat_request");
+            request_Chat(user_chat,"http://592c-34-143-197-40.ngrok.io/chat_request");
 
         }
 
@@ -171,9 +176,14 @@ public class VoiceAlert extends Fragment {
 
         CheckPermission();
 
+
         bar = rootView.findViewById(R.id.progressBar);
-        test = rootView.findViewById(R.id.test);
-        test.setText(recipeNowString);
+        recipeText = rootView.findViewById(R.id.tmpTextView);
+        pageText = rootView.findViewById(R.id.test);
+
+        recipeText.setText(recipeNowString);
+        pageText.setText(Integer.toString(current_index));
+        speak("" + recipeNowString);
 
         barCurrentValue = bar.getProgress();
         barMaxValue = bar.getMax();
@@ -290,7 +300,8 @@ public class VoiceAlert extends Fragment {
 
     public void ResetText(){
         recipeNowString = data.getRecipeData(current_index);
-        test.setText(recipeNowString);
+        recipeText.setText(recipeNowString);
+        pageText.setText(Integer.toString(current_index));
     }
 
     public void CheckPermission() {
@@ -309,7 +320,7 @@ public class VoiceAlert extends Fragment {
     public void request_Chat(String user_chat, String Url){
 
         String JSON = "{\"chatString\":\""+user_chat+"\"}";
-        mainActivity.sendHttpApi(JSON,Url,106);
+        mainActivity.sendHttpApi(JSON,Url,106,-1);
     }
 
     public void Chat_result(int control){
@@ -323,13 +334,17 @@ public class VoiceAlert extends Fragment {
         if (control == 0) {
             //this.setTimer();
             Toast.makeText(mainActivity.getApplicationContext(), "타이머 설정", Toast.LENGTH_SHORT).show();
-        } else if(control == 1){
-            this.control(true);
+            speak("타이머를 설정합니다.");
         } else if(control == 2){
+            this.control(true);
+            speak("" + recipeNowString);
+        } else if(control == 1){
             this.control(false);
+            speak(" "+ recipeNowString);
         } else if(control == 3){
             //this.repeat();
             Toast.makeText(mainActivity.getApplicationContext(), "다시듣기 실행", Toast.LENGTH_SHORT).show();
+            speak("다시듣기 " + recipeNowString);
         }
     }
 
@@ -342,5 +357,23 @@ public class VoiceAlert extends Fragment {
         current_index = 0;
         maxIndex = this.data.getMaxPage();
         recipeNowString = this.data.getRecipeData(current_index);
+    }
+
+    public void speak(String text){
+        tts = new TextToSpeech(mainActivity.getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != ERROR){
+                    int result = tts.setLanguage(Locale.KOREA); // 언어 선택
+                    if(result == TextToSpeech.LANG_NOT_SUPPORTED || result == TextToSpeech.LANG_MISSING_DATA){
+                        Log.e("TTS", "This Language is not supported");
+                    }else{
+                        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
+                    }
+                }else{
+                    Log.e("TTS", "Initialization Failed!");
+                }
+            }
+        });
     }
 }

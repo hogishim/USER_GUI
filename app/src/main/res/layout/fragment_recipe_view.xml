@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.05"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#BBB0DC">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -16,20 +17,22 @@
             android:layout_weight="1"
             >
             <Button
-                android:id="@+id/src"
+                android:id="@+id/strt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn3"
+                android:background="@drawable/mikebtn"
                 android:enabled="true"
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
         </LinearLayout>
 
 
+
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="9"
             >
 
 
@@ -42,6 +45,8 @@
                 android:fontFamily="@font/font"
                 android:textColor="#000002"/>
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,19 +62,45 @@
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
         </LinearLayout>
+
+
     </LinearLayout>
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.5"
+        android:layout_weight="0.5"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:layout_gravity="center"
+            android:orientation="horizontal"
             >
+
+            <ImageView
+                android:gravity="center"
+                android:id="@+id/showim"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img"
+                android:scaleType="fitXY"/>
+
 
         </LinearLayout>
 
@@ -81,40 +112,38 @@
             android:orientation="vertical">
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                >
-
-                <Button
-                    android:id="@+id/strt"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/btn1"
-                    android:enabled="true"
-                    android:text="음성인식 시작"
-                    android:onClick="onClick"
-                    android:textColor="#353535" />
-
-
-            </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
                     android:fontFamily="@font/font3"
                     android:text="재료"
                     android:textColor="#000000"
                     android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/showIng"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/font5"
+                    android:text="재료는 여기에 들어갑니다"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
             </LinearLayout>
 
 
@@ -126,33 +155,49 @@
 
 
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:orientation="horizontal">
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font3"
             android:text="조리법"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
             android:textColor="#000000"
             android:textSize="23dp" />
 
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/showCk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font5"
+            android:text="여기에 조리법이 들어갑니다"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
 
     </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
 
-
-
-
-    </LinearLayout>
 
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
 

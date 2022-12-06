@@ -1,5 +1,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.1"
         android:orientation="vertical"
-        android:background="@color/yellow">
+        android:background="#BBB0DC">
 
         <TextView
             android:layout_width="match_parent"
@@ -54,6 +56,7 @@
 
             <Button
                 android:id="@+id/src"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/btn3"
@@ -63,6 +66,7 @@
 
             <Button
                 android:id="@+id/vsrc"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/mikebtn"
@@ -81,8 +85,138 @@
             android:layout_weight="15"
             >
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="106dp"
+                    android:layout_height="107dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    tools:srcCompat="@tools:sample/avatars" />
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="109dp"
+                    android:layout_height="106dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="172dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="63dp"
+                    android:layout_height="61dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="300dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="63dp"
+                    android:layout_height="61dp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="300dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="63dp"
+                    android:layout_height="61dp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="380dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="63dp"
+                    android:layout_height="61dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="380dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="109dp"
+                    android:layout_height="106dp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="172dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="마지막 사용 레시피 내용."
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="47dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="164dp"
+                    android:layout_height="34dp"
+                    android:text="아이템(마지막 사용 레시피) 기반 추천 결과 ."
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="138dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="164dp"
+                    android:layout_height="34dp"
+                    android:text="사용자 평가 기반 추천 결피."
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="138dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="324dp"
+                    tools:layout_editor_absoluteY="194dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="125dp"
+                    tools:layout_editor_absoluteY="194dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="79dp"
+                    tools:layout_editor_absoluteY="310dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="79dp"
+                    tools:layout_editor_absoluteY="390dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="278dp"
+                    tools:layout_editor_absoluteY="310dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="97dp"
+                    android:layout_height="51dp"
+                    android:text="레시피 내용."
+                    tools:layout_editor_absoluteX="278dp"
+                    tools:layout_editor_absoluteY="390dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
     </LinearLayout>
@@ -95,38 +229,38 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/toList"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:drawableTop="@drawable/list"
-                android:background="@drawable/btn2"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:fontFamily="@font/font3"
-                android:textSize="15dp"
-                android:text="음식 리스트"
-                android:textColor="#03A9F4"
-                android:layout_weight="1"/>
+        <Button
+            android:id="@+id/toList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/list"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/font3"
+            android:textSize="15dp"
+            android:text="음식 리스트"
+            android:textColor="#03A9F4"
+            android:layout_weight="1"/>
 
 
-            <Button
-                android:id="@+id/toMyPg"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:drawableTop="@drawable/user"
-                android:background="@drawable/btn2"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:fontFamily="@font/font3"
-                android:textSize="15dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="마이페이지"
-                android:textColor="#03A9F4"
-                android:layout_weight="1"/>
+        <Button
+            android:id="@+id/toMyPg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/user"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:fontFamily="@font/font3"
+            android:textSize="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="마이페이지"
+            android:textColor="#03A9F4"
+            android:layout_weight="1"/>
 
 
         <Button
@@ -146,37 +280,37 @@
             android:textSize="15dp" />
 
         <Button
-                android:id="@+id/toUd"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:drawableTop="@drawable/prefer"
-                android:background="@drawable/btn2"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="선호도 수정"
-                android:fontFamily="@font/font3"
-                android:textSize="15dp"
-                android:textColor="#03A9F4"
-                android:layout_weight="1"/>
+            android:id="@+id/toUd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/prefer"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="선호도 수정"
+            android:fontFamily="@font/font3"
+            android:textSize="15dp"
+            android:textColor="#03A9F4"
+            android:layout_weight="1"/>
 
 
-            <Button
-                android:id="@+id/toErl"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:drawableTop="@drawable/erl"
-                android:background="@drawable/btn2"
-                android:enabled="true"
-                android:onClick="onClick"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="레시피 등록"
-                android:fontFamily="@font/font3"
-                android:textSize="15dp"
-                android:textColor="#03A9F4"
-                android:layout_weight="1"/>
+        <Button
+            android:id="@+id/toErl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/erl"
+            android:background="@drawable/btn2"
+            android:enabled="true"
+            android:onClick="onClick"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="레시피 등록"
+            android:fontFamily="@font/font3"
+            android:textSize="15dp"
+            android:textColor="#03A9F4"
+            android:layout_weight="1"/>
 
 
 
