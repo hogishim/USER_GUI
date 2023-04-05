@@ -9,12 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:background="#BBB0DC">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:layout_gravity="center"
@@ -23,6 +22,11 @@
             android:textColor="#111111"
             android:textSize="30dp" />
 
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="signup" />
 
 
     </LinearLayout>
@@ -32,9 +36,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="9"
         android:orientation="vertical"
-
+        android:layout_weight="1"
         >
 
         <LinearLayout
@@ -46,8 +49,9 @@
 
 
             <EditText
+                android:paddingLeft="10dp"
                 android:id="@+id/sample_EditText"
-                android:layout_weight="30"
+                android:ems="15"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/serachbar"
@@ -74,6 +78,7 @@
                 android:onClick="onClick"
                 android:textColor="#E91E63" />
 
+
         </LinearLayout>
         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
 
@@ -82,236 +87,419 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="15"
+            android:orientation="vertical"
+            android:layout_weight="2"
             >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
+                android:fontFamily="@font/font5"
+                android:textColor="#BBB0DC"
+                android:layout_marginLeft="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:text="음식 카테고리"
+                android:textSize="20dp"/>
 
-                <ImageView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/kor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/kor"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    />
+
+
+
+                <ImageButton
+                    android:id="@+id/jap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/jap"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/chi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/chi"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+                <ImageButton
+                    android:id="@+id/wes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/wes"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/ckn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/ckn"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    />
+
+
+
+                <ImageButton
+                    android:id="@+id/cow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cow"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/pig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pig"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+                <ImageButton
+                    android:id="@+id/she"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/she"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/spi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:onClick="onClick"
+                    android:background="@drawable/spi"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    />
+
+
+
+                <ImageButton
+                    android:id="@+id/sal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sal"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/swe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/swe"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+                <ImageButton
+                    android:id="@+id/sou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sou"
+                    android:enabled="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+                android:layout_weight="1"
+            >
+
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#BBB0DC"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="#BBB0DC"
+                android:fontFamily="@font/font5"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="추천 레시피"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ListView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/recommend_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+
+                    <ListView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:id="@+id/recommend_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#BBB0DC"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:layout_weight="1"
+                    >
+                    <TextView
+                        android:textColor="#BBB0DC"
+                        android:fontFamily="@font/font5"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/Last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="최근 음식"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="106dp"
-                    android:layout_height="107dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="16dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/img" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="109dp"
-                    android:layout_height="106dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="172dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="63dp"
-                    android:layout_height="61dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="300dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:layout_weight="15"
+                        android:orientation="vertical"
+                        >
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="63dp"
-                    android:layout_height="61dp"
-                    tools:layout_editor_absoluteX="215dp"
-                    tools:layout_editor_absoluteY="300dp"
-                    tools:srcCompat="@tools:sample/avatars" />
 
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="63dp"
-                    android:layout_height="61dp"
-                    tools:layout_editor_absoluteX="215dp"
-                    tools:layout_editor_absoluteY="380dp"
-                    tools:srcCompat="@tools:sample/avatars" />
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="63dp"
-                    android:layout_height="61dp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="380dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    <TextView
+                    android:id="@+id/Last_tag"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last_tag" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="109dp"
-                    android:layout_height="106dp"
-                    tools:layout_editor_absoluteX="215dp"
-                    tools:layout_editor_absoluteY="172dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+                  <TextView
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/Last_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"/>
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="마지막 사용 레시피 내용."
-                    tools:layout_editor_absoluteX="157dp"
-                    tools:layout_editor_absoluteY="47dp" />
+                    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="164dp"
-                    android:layout_height="34dp"
-                    android:text="아이템(마지막 사용 레시피) 기반 추천 결과 ."
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="138dp" />
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="164dp"
-                    android:layout_height="34dp"
-                    android:text="사용자 평가 기반 추천 결피."
-                    tools:layout_editor_absoluteX="215dp"
-                    tools:layout_editor_absoluteY="138dp" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="324dp"
-                    tools:layout_editor_absoluteY="194dp" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="125dp"
-                    tools:layout_editor_absoluteY="194dp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="79dp"
-                    tools:layout_editor_absoluteY="310dp" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="79dp"
-                    tools:layout_editor_absoluteY="390dp" />
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="278dp"
-                    tools:layout_editor_absoluteY="310dp" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="97dp"
-                    android:layout_height="51dp"
-                    android:text="레시피 내용."
-                    tools:layout_editor_absoluteX="278dp"
-                    tools:layout_editor_absoluteY="390dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
 
-    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/darker_gray"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#BBB0DC"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/toList"
+        <ImageButton
+            android:id="@+id/toL"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/list"
-            android:background="@drawable/btn2"
+            android:src="@drawable/list"
             android:enabled="true"
             android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:text="음식 리스트"
-            android:textColor="#03A9F4"
-            android:layout_weight="1"/>
+            android:background="@drawable/btn2"
+            android:layout_weight="1"
+            android:padding="5dp"
+            />
 
 
-        <Button
-            android:id="@+id/toMyPg"
+
+        <ImageButton
+            android:id="@+id/toM"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/user"
+            android:src="@drawable/user"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="마이페이지"
-            android:textColor="#03A9F4"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:padding="5dp"/>
 
-
-        <Button
+        <ImageButton
             android:id="@+id/toH"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:background="@drawable/btn2"
+            android:enabled="true"
             android:layout_weight="1"
-            android:background="@drawable/btn2"
-            android:drawableTop="@drawable/home"
-            android:enabled="true"
-            android:fontFamily="@font/font3"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="홈"
-            android:textColor="#03A9F4"
-            android:textSize="15dp" />
+            android:padding="5dp"/>
 
-        <Button
-            android:id="@+id/toUd"
+
+        <ImageButton
+            android:id="@+id/toT"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/prefer"
+            android:src="@drawable/prefer"
             android:background="@drawable/btn2"
             android:enabled="true"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="선호도 수정"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:textColor="#03A9F4"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:padding="5dp"/>
 
 
-        <Button
-            android:id="@+id/toErl"
+
+
+
+        <ImageButton
+            android:id="@+id/toE"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/erl"
-            android:background="@drawable/btn2"
+            android:src="@drawable/erl"
+            android:background="@color/white"
             android:enabled="true"
-            android:onClick="onClick"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="레시피 등록"
-            android:fontFamily="@font/font3"
-            android:textSize="15dp"
-            android:textColor="#03A9F4"
-            android:layout_weight="1"/>
-
+            android:layout_weight="1"
+            android:padding="5dp"/>
 
 
 

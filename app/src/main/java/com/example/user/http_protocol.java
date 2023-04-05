@@ -43,7 +43,7 @@ public class http_protocol extends Thread{
         BufferedReader reader = null;
         try{
 
-            if(this.control == 1021 || this.control == 1022){
+            if(this.control == 1021 || this.control == 1022 || this.control == 1012 || this.control == 1013 ){
                 String param = "?id=" + Integer.toString(ID);
                 Log.d("param",param);
                 UrlData = UrlData+param;
@@ -56,8 +56,8 @@ public class http_protocol extends Thread{
 
             con.setDoInput(true);
             con.setUseCaches(false);
-            con.setReadTimeout(1000);
-            con.setConnectTimeout(1000);
+            con.setReadTimeout(20000);
+            con.setConnectTimeout(20000);
             con.setRequestMethod("POST");
             con.setRequestProperty("Content-Type", "application/json");
             con.setDoOutput(true); //OutputStream 을 사용해서 post body 데이터 전송

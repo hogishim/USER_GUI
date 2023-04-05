@@ -37,7 +37,7 @@ public class recipe_data {
     public String getIngredient_cp (int page){
         String result = new String();
 
-        result = ingredient_list.get(page).getGetIngredient_Cp();
+        result = ingredient_list.get(page).getIngredient_Name();
 
         return result;
     }

@@ -29,12 +29,38 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/USER/app/src/main/res/layout/fragment_test_again.xml" value="0.5260416666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER/app/src/main/res/layout/fragment_user_page.xml" value="0.5255208333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER/app/src/main/res/layout/fragment_voice_alert.xml" value="0.5255208333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/back.xml" value="0.419" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/bfrb.xml" value="0.3295" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/btn2.xml" value="0.567" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/btn3.xml" value="0.419" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/btn4.xml" value="0.419" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/btn5.xml" value="0.3295" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/btn6.xml" value="0.419" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/chi.xml" value="0.567" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/cirbtn.xml" value="0.418" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/circlebtn.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/ckn.xml" value="0.567" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/cow.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/custom_progressbar.xml" value="0.567" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/dow.xml" value="0.393" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/homebtn.xml" value="0.3295" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/ic_baseline_airplanemode_active_24.xml" value="0.254" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.254" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3295" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/inputbox.xml" value="0.567" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/jap.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/kor.xml" value="0.566" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/mikebtn.xml" value="0.3295" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/pig.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/sal.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/serachbar.xml" value="0.5435" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/she.xml" value="0.394" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/sheep.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/sou.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/spi.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/swe.xml" value="0.566" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/upp.xml" value="0.393" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/drawable/wes.xml" value="0.566" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/font/font3.xml" value="0.4505208333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/font/font4.xml" value="0.4505208333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/font/font5.xml" value="0.44947916666666665" />
@@ -43,15 +69,15 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_enroll_recipe.xml" value="0.32708333333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_food_list.xml" value="0.32708333333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_log_in.xml" value="0.32708333333333334" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_main.xml" value="0.32708333333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_main.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_pw_reset.xml" value="0.45416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_recipe_view.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_recom_test.xml" value="0.4395833333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_sign_up.xml" value="0.32708333333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_test_again.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_user_page.xml" value="0.32708333333333334" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_voice_alert.xml" value="0.32708333333333334" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/item.xml" value="0.5744791666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/fragment_voice_alert.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/USER_GUI_AOS/app/src/main/res/layout/item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18795289855072464" />
         <entry key="app/src/main/res/layout/fragment_enroll_recipe.xml" value="0.4516210739614995" />
         <entry key="app/src/main/res/layout/fragment_food_list.xml" value="0.4516210739614995" />

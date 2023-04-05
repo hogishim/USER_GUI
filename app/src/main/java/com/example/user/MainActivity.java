@@ -14,6 +14,7 @@ import android.support.v4.os.IResultReceiver;
 import android.util.Log;
 import android.widget.TextView;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     EnrollRecipe frameLayout5;
     VoiceAlert  frameLayout6;
     RecipeView frameLayout7;
+    SignUp frameLayout8;
 
     MyHandler handle = new MyHandler(this);
 
@@ -69,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         frameLayout5 = new EnrollRecipe();
         frameLayout6 = new VoiceAlert();
         frameLayout7 = new RecipeView();
+        frameLayout8 = new SignUp();
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.lgn, frameLayout1).commit();
@@ -101,33 +104,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fragmentChange(int index){
-        if(index == 1){
+        if(index == 1){//Main
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout1).commit();
         }
-        else if(index == 2){
+        else if(index == 2){//foodlist
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout2).commit();
         }
-        else if(index == 3){
+        else if(index == 3){//TestAgain
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout3).commit();
         }
-        else if(index == 4){
+        else if(index == 4){//UserPage
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout4).commit();
         }
-        else if(index == 5){
+        else if(index == 5){//EnrollRecipe
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout5).commit();
         }
-        else if(index == 6){
+        else if(index == 6){//VoiceAlert
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout6).commit();
         }
-        else if(index == 7){
+        else if(index == 7){//recipeview
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.lgn, frameLayout7).commit();
+        }
+        else if(index == 8 ){//signup
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.lgn, frameLayout8).commit();
         }
     }
 
@@ -137,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
         http.start();
     }
+
 
     public static class MyHandler extends Handler {
         private final WeakReference<MainActivity> weakReference;
@@ -221,7 +229,8 @@ public class MainActivity extends AppCompatActivity {
                 }else if(msg.what == 105){
 
                         result = (String) msg.obj;
-                        activity.frameLayout5.send_result(result);
+                        int control = Integer.parseInt(result);
+                        activity.frameLayout5.send_result(control);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
                 }else if(msg.what == 106){
@@ -243,10 +252,21 @@ public class MainActivity extends AppCompatActivity {
                         //activity.frameLayout6.send_result(result);
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
-                }else if(msg.what == 107){
-
-                        result = (String) msg.obj;
-                        activity.frameLayout7.send_result(result);
+                }else if(msg.what == 107) {
+                    result = (String) msg.obj;
+                    activity.frameLayout7.send_result(result);
+                }else if(msg.what == 108) {
+                    result = (String) msg.obj;
+                    Log.d("idcheck", "idcheck : " + result);
+                    int control = Integer.parseInt(result);
+                    activity.frameLayout8.check_result(control);
+                }
+                else if(msg.what == 109) {
+                    result = (String) msg.obj;
+                    Log.d("result","Saved! : "+ result);
+                    int control1 = Integer.parseInt(result);
+                    activity.frameLayout8.check_result(control1);
+                }
                     // http 클래스에서 JSON 데이터를 넘겨받지 못한 경우.
 
                 }else if(msg.what == 404){
@@ -260,8 +280,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-    }
-
-
-
 }
+
+

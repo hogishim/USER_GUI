@@ -65,7 +65,7 @@
 
         <EditText
             android:id="@+id/sample_EditText"
-            android:layout_weight="30"
+            android:ems="15"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/serachbar"
@@ -77,12 +77,14 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/btn3"
+            android:layout_weight="1"
             android:enabled="true"
             android:onClick="onClick"
             android:textColor="#E91E63" />
 
         <Button
             android:id="@+id/vsrc"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/mikebtn"
@@ -102,7 +104,7 @@
 
 
         <ListView
-            android:id="@+id/listView1"
+            android:id="@+id/recommend_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
